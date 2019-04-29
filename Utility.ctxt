@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Utility
+comment0.text=\r\n\ Provides\ supporting\ utilities\ for\ the\ Drawing\ Application,\ especially\ in\ creating\ the\ initial\ shape\ library\r\n\r\n\ @author\ \ \ \ \ \ Bill\ Barry\r\n\ @version\ \ \ \ \ 2017-09-07\r\n
+comment1.params=
+comment1.target=Utility()
+comment2.params=
+comment2.target=void\ createShapeLib()
+comment2.text=\r\n\ Creates/recreates\ the\ shape\ library,\ overwriting\ existing\ files\r\n\ \r\n\ @throws\ \ \ \ \ \ FileNotFoundException\ if\ a\ shape\ file\ can't\ be\ written\r\n\ @throws\ \ \ \ \ \ IOException\ if\ errors\ occur\ during\ serialization\ of\ a\ shape\ file\r\n\r\n
+comment3.params=shapeList
+comment3.target=void\ addShapeSquare(ArrayList)
+comment3.text=\r\n\ Creates\ a\ square\ shape\ and\ adds\ it\ to\ the\ library\r\n\r\n\ @param\ \ \ shapeList\ \ \ \ the\ shape\ library\ to\ which\ to\ add\ the\ shape\r\n
+comment4.params=shapeList
+comment4.target=void\ addShapeStar(ArrayList)
+comment4.text=\r\n\ Creates\ a\ four-pointed\ star\ shape\ and\ adds\ it\ to\ the\ library\r\n\r\n\ @param\ \ \ shapeList\ \ \ \ the\ shape\ library\ to\ which\ to\ add\ the\ shape\r\n
+comment5.params=shapeList
+comment5.target=void\ addShapeCircle(ArrayList)
+comment5.text=\r\n\ Creates\ a\ circle\ shape\ and\ adds\ it\ to\ the\ library\r\n\r\n\ @param\ \ \ shapeList\ \ \ \ the\ shape\ library\ to\ which\ to\ add\ the\ shape\r\n
+comment6.params=shapeList
+comment6.target=void\ addShapeHeart(ArrayList)
+comment6.text=\r\n\ Creates\ a\ heart\ shape\ and\ adds\ it\ to\ the\ library\r\n\r\n\ @param\ \ \ shapeList\ \ \ \ the\ shape\ library\ to\ which\ to\ add\ the\ shape\r\n
+comment7.params=shapeList
+comment7.target=void\ writeShapes(ArrayList)
+comment7.text=\r\n\ Writes\ shapes\ to\ their\ respective\ shape\ files,\ within\ the\ shapes\ folder\ (under\ the\ project\ folder)\r\n\r\n\ @param\ \ \ shapeList\ \ \ \ the\ shape\ library\ from\ which\ to\ create\ the\ shapes\r\n\ @throws\ \ \ \ \ \ \ \ \ \ \ \ \ \ FileNotFoundException\ if\ a\ shape\ file\ can't\ be\ written\r\n\ @throws\ \ \ \ \ \ \ \ \ \ \ \ \ \ IOException\ if\ errors\ occur\ during\ serialization\ of\ a\ shape\ file\r\n
+comment8.params=rgbValue
+comment8.target=int\ rgbRangeLimit(int)
+comment8.text=\r\n\ Ensures\ that\ RGB\ values\ are\ within\ required\ range\ 0-255;\ sets\ to\ boundary,\ otherwise\r\n\r\n\ @param\ \ \ rgbValue\ \ \ \ \ \ \ \ an\ RGB\ value\ to\ validate\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ an\ in-range\ RGB\ value\r\n
+numComments=9

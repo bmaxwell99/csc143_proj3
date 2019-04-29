@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Shape
+comment1.params=name
+comment1.target=Shape(java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ the\ SHape\ Class\r\n\r\n\ @param\ \ name\ the\ string\ to\ name\ the\ shape\r\n
+comment2.params=name
+comment2.target=void\ setName(java.lang.String)
+comment2.text=\r\n\ set\ method\ for\ the\ name\ variable\r\n\r\n\ @param\ \ name\ the\ string\ to\ set\ the\ name\ to\r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ get\ method\ for\ the\ name\ variable\r\n\r\n\ @return\ \ \ \ the\ name\ of\ the\ shape\r\n
+comment4.params=point
+comment4.target=void\ addPoint(Point)
+comment4.text=\r\n\ A\ method\ for\ adding\ points\ to\ the\ array\ list\r\n\r\n\ @param\ \ point\ \ \ \ the\ point\ to\ be\ added\r\n
+numComments=5

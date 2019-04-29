@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ShapeLibrary
+comment1.params=
+comment1.target=ShapeLibrary()
+comment1.text=\r\n\ constructor\ for\ ShapeLib\ class\r\n\r\n
+comment2.params=shape
+comment2.target=void\ addShape(Shape)
+comment2.text=\r\n\ method\ for\ adding\ a\ shape\ to\ the\ library\r\n\r\n\ @param\ \ shape\ \ \ \ the\ shape\ to\ be\ added\r\n
+numComments=3
