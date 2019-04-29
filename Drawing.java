@@ -66,86 +66,15 @@ public class Drawing {
         int i=0;
         while(fileScan.hasNextLine()) {
             lineScan = new Scanner(fileScan.nextLine());
-            drawingSpecs.get(i).readFromFile(lineScan);
+            drawingSpecs.set(i, DrawInstruction.readFromFile(lineScan)); 
+            
             i++;
         }
         //}
 
     }
 
-    // /**
-     // * setter for the canvas attribute
-     // *
-     // * @param  fileScan  the file to read the canvas attrubutes from 
-     // */
-    // public void setCanvasData(Scanner fileScan)
-    // {
-        // ;
-        // String text;
-        // int endAt, w, h, r, g, b, gD, gSR, gSG, gSB, gER, gEG, gEB;
-        // gD = -1;
-        // while(lineScan.hasNext())    {
-            // text = lineScan.next();
-            // String flag = text.substring(0, 3);
-            // //The following ensures that the string can be spliced into an integer
-            // if(text.endsWith(",")){
-                // endAt = text.length()-1;
-            // }
-            // else {
-                // endAt = text.length();
-            // }
-
-            // //The following sets the variables in prep for the constructor
-            // if(flag.equals("wid"))   {
-                // w = Integer.parseInt(text.substring(6, endAt));      
-            // }
-            // else if(flag.equals("hei"))   {
-                // h = Integer.parseInt(text.substring(7, endAt));
-            // }
-            // else if(flag.equals("red"))   {
-                // r = Integer.parseInt(text.substring(4, endAt));
-            // }
-            // else if(flag.equals("gre"))   {                    
-                // g = Integer.parseInt(text.substring(6, endAt));
-            // }
-            // else if(flag.equals("blu"))   {
-                // b = Integer.parseInt(text.substring(5, endAt));
-            // }
-            // else if(flag.equals("gra")) {
-                // //structure for in case of gradient setting
-                // flag = text.substring(0, 6);
-
-                // if(flag.equals("gradDir"))   {
-                    // gD = Integer.parseInt(text.substring(8, 9));      
-                // }
-                // else{
-                    // flag = text.substring(0, 12);
-                    // if(flag.equals("gradStartR"))   {
-                        // gSR = Integer.parseInt(text.substring(15, endAt));
-                    // }
-                    // else if(flag.equals("gradStartG"))   {
-                        // r = Integer.parseInt(text.substring(17, endAt));
-                    // }
-                    // else if(flag.equals("gradStartB"))   {                    
-                        // g = Integer.parseInt(text.substring(16, endAt));
-                    // }
-                    // else if(flag.equals("gradEndRed"))   {
-                        // b = Integer.parseInt(text.substring(13, endAt));
-                    // }
-                    // else if(flag.equals("gradEndGre"))   {
-                        // b = Integer.parseInt(text.substring(15, endAt));
-                    // }
-                    // else if(flag.equals("gradEndBlu"))   {
-                        // b = Integer.parseInt(text.substring(14, endAt));
-                    // }
-                // }
-            // }
-        // }
-        
-        // if(gD == -1)    {
-            // canvasData = new CanvasInstruction(w , h, new Color(r, g, b), null, null, 0);            
-        // }
-    // }
+    
 
     /**
      * An example of a method - replace this comment with your own
