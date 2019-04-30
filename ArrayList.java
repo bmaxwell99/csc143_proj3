@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class ArrayList<E> implements Serializable {
+public class ArrayList<E> implements Serializable, Iterable <E> {
     private E[] elementData; // list of values
     private int size;        // current number of elements in the list
 

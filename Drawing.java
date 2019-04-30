@@ -62,15 +62,17 @@ public class Drawing {
 
         Scanner fileScan = new Scanner(instructions);
         Scanner lineScan = new Scanner(fileScan.nextLine());
-        canvasData.readFromFile(lineScan);
+        canvasData = CanvasInstruction.readFromFile(lineScan);
+        System.out.println(canvasData.getWidth());
         int i=0;
+        drawingSpecs = new ArrayList<DrawInstruction>();
         while(fileScan.hasNextLine()) {
             lineScan = new Scanner(fileScan.nextLine());
-            drawingSpecs.set(i, DrawInstruction.readFromFile(lineScan)); 
+            drawingSpecs.add(DrawInstruction.readFromFile(lineScan)); 
             
             i++;
         }
-        //}
+        
 
     }
 
@@ -84,7 +86,21 @@ public class Drawing {
      */
     public void draw()
     {
+        //constructs the canvas
+        canvas = new DrawingPanel(canvasData.getWidth(), canvasData.getHeight());
+        canvas.setBackground(canvasData.getColorSolid());
+        
+        
+        //paints on canvas
+        graphics = canvas.getGraphics();
+        for(DrawInstruction drawI : drawingSpecs)   {
+            
+        }
+        
     }
+    
+    
+
 
 }
 
